@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.*;
 import java.time.LocalDate;
 
 class Book {
@@ -132,33 +131,42 @@ class IssueRecord {
     public int getIssueId() {
         return issueId;
     }
+
     public Book getBook() {
         return book;
     }
+
     public User getUser() {
         return user;
     }
+
     public LocalDate getIssueDate() {
         return issueDate;
     }
+
     public LocalDate getReturnDate() {
         return returnDate;
     }
+
     public void setBook(Book book) {
         this.book = book;
     }
+
     public void setUser(User user) {
         this.user = user;
     }
+
     public void setIssueDate(LocalDate issueDate) {
         this.issueDate = issueDate;
     }
+
     public void setReturnDate(LocalDate returnDate) {
         this.returnDate = returnDate;
     }
 
     public String tostring() {
-        return "Issue ID: " + issueId + ", Book: [" + book.tostring() + "], User: [" + user.tostring() + "], Issue Date: "
+        return "Issue ID: " + issueId + ", Book: [" + book.tostring() + "], User: [" + user.tostring()
+                + "], Issue Date: "
                 + issueDate + ", Return Date: " + returnDate;
     }
 
